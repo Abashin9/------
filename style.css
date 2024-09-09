@@ -1,0 +1,240 @@
+@charset "UTF-8";
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-weight: 1000;
+}
+
+section:nth-child(odd){
+    background: black;
+}
+
+section:nth-child(even){
+    background: rgb(12, 11, 11);
+}
+
+nav{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background: rgb(12, 11, 11);
+}
+
+nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 8px 25px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav a:hover,
+section#n1:hover~nav a[href="n1"],
+section#n2:hover~nav a[href="n2"],
+section#n3:hover~nav a[href="n3"],
+section#n4:hover~nav a[href="n4"],
+section#n5:hover~nav a[href="n5"]
+{
+    background: white;
+    color: black;
+}
+
+nav a:active{
+    background: white;
+}
+
+
+#bmw4{
+    position: absolute;
+    width: 130vh;
+    top: 250px;
+    left: 100px;
+}
+#bmw5{
+    position: absolute;
+    width: 120vh;
+    top: 1100px;
+    left: 100px;
+}
+#bmw7{
+    position: absolute;
+    width: 130vh;
+    top: 2250px;
+    left: 100px;
+}
+#bmwx5{
+    position: absolute;
+    width: 130vh;
+    top: 3150px;
+    left: 100px;
+}
+#bmwx7{
+    position: absolute;
+    width: 130vh;
+    top: 4150px;
+    left: 100px;
+}
+
+#bmw4.zoomed{
+    transition: 0.5s;
+}
+#bmw4.zoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#bmw4.unzoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+#bmw5.zoomed{
+    transition: 0.5s;
+}
+#bmw5.zoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#bmw5.unzoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+#bmw7.zoomed{
+    transition: 0.5s;
+}
+#bmw7.zoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#bmw7.unzoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+#bmwx5.zoomed{
+    transition: 0.5s;
+}
+#bmwx5.zoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#bmwx5.unzoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+#bmwx7.zoomed{
+    transition: 0.5s;
+}
+#bmwx7.zoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+#bmwx7.unzoomed:hover{
+    transition: 0.5s;
+    transform: scale(1.0);
+}
+
+#bmw4o{
+    position: absolute;
+    color: white;
+    top: 300px;
+    left: 1300px;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#bmw4op{
+    position: absolute;
+    color: white;
+    top: 330px;
+    left: 1300px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#bmw5o{
+    position: absolute;
+    color: white;
+    top: 1300px;
+    left: 1300px;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#bmw5op{
+    position: absolute;
+    color: white;
+    top: 1330px;
+    left: 1300px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#bmw7o{
+    position: absolute;
+    color: white;
+    top: 2300px;
+    left: 1400px;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#bmw7op{
+    position: absolute;
+    color: white;
+    top: 2330px;
+    left: 1400px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#bmwx5o{
+    position: absolute;
+    color: white;
+    top: 3300px;
+    left: 1400px;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#bmwx5op{
+    position: absolute;
+    color: white;
+    top: 3370px;
+    left: 1400px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+#bmwx7o{
+    position: absolute;
+    color: white;
+    top: 4300px;
+    left: 1400px;
+    font-size: 2em;
+    font-weight: 600;
+    text-decoration: underline;
+}
+#bmwx7op{
+    position: absolute;
+    color: white;
+    top: 4370px;
+    left: 1400px;
+    font-size: 1.5em;
+    font-weight: 200;
+}
